@@ -17,7 +17,11 @@ composer require quanph/simple-rake
 ## Usage
 
 ```php
-// Usage description here
+use Quanph\SimpleRake\SimpleRake;
+
+$text = 'needle text';
+$sp = new SimpleRake($text, 'vi');
+$results = $sp->extractKeywords();
 ```
 
 ### Testing
