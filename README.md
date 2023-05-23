@@ -40,12 +40,12 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ### Security
 
-If you discover any security related issues, please email code.tieumomo@gmail.com instead of using the issue tracker.
+If you discover any security related issues, please email <code.tieumomo@gmail.com> instead of using the issue tracker.
 
 ## Credits
 
--   [Quan](https://github.com/code-tieumomo)
--   [All Contributors](../../contributors)
+- [Quan](https://github.com/code-tieumomo)
+- [All Contributors](../../contributors)
 
 ## License
 
