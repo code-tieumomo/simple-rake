@@ -26,7 +26,7 @@ class SimpleRake
         $this->text = $text;
 
         if (is_null($locale)) {
-            $locale = config('config.locale');
+            $locale = config('simple-rake.locale');
         } else {
             $this->locale = $locale;
         }
@@ -85,7 +85,7 @@ class SimpleRake
      */
     private function extractSentencesToPhrases(array $sentences): array
     {
-        $stopwords = config('config.stop_words.' . $this->locale);
+        $stopwords = config('simple-rake.stop_words.' . $this->locale);
         $stopwordsRegex = '/\b' . implode('\b|\b', $stopwords) . '\b/u';
 
         $words = [];
@@ -156,7 +156,7 @@ class SimpleRake
             foreach ($words as $word) {
                 $score += $scores[$word] ?? 0;
             }
-            $finalScores[$phrase] = round($score, config('config.precision'));
+            $finalScores[$phrase] = round($score, config('simple-rake.precision'));
         }
 
         arsort($finalScores);
