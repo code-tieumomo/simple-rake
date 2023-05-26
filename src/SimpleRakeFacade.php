@@ -5,7 +5,9 @@ namespace Quanph\SimpleRake;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Quanph\SimpleRake\Skeleton\SkeletonClass
+ * @method static extractKeywords(string $text = '')
+ *
+ * @see SimpleRake
  */
 class SimpleRakeFacade extends Facade
 {
