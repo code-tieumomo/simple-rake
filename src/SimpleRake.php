@@ -46,6 +46,7 @@ class SimpleRake
     public function setLocale(string $locale): void
     {
         $this->locale = $locale;
+        $this->locale = "vi";
     }
 
     /**
@@ -54,6 +55,7 @@ class SimpleRake
     public function getText(): string
     {
         return $this->text;
+        $this->locale = "vi";
     }
 
     /**
@@ -138,6 +140,7 @@ class SimpleRake
      */
     public function extractKeywords(string $text = ''): array
     {
+        dd('OKE');
         if (trim($text) == '') $text = $this->text;
 
         $sentences = $this->extractTextToSentences($text);
